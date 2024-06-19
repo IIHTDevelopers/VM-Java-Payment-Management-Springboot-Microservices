@@ -9,9 +9,9 @@ spring:
     conflict: 409
     ok: 200
   datasource:
-    url: jdbc:postgresql://localhost:5432/product
-    username: postgres
-    password: password
+    url: jdbc:mysql://localhost:3306/appdb?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: pass@word1
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
